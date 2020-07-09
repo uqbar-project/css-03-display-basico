@@ -1,0 +1,16 @@
+div {
+  border: 1px solid;
+  border-color: darkred;
+  /* 1- display: inline; */
+}
+
+p {
+  /* 1- display: inline; */
+}
+
+em {
+  border: 5px solid;
+  border-color: darkblue;
+  padding: 5px;
+  margin: 10px;
+}
