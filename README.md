@@ -107,4 +107,4 @@ Les dejamos material adicional para profundizar:
 - [Z-Index - CSS Tricks](https://css-tricks.com/almanac/properties/z/z-index/)
 - [Learn Z-Index using a visualization tool](https://thirumanikandan.com/posts/learn-z-index-using-a-visualization-tool)
 - [Ejemplo más avanzado con display blocks y jugando con elementos flotantes](https://codepen.io/extragoz/pen/BajJmOZ?editors=1100)
-
+- [CSS Painting Order](https://abandonedwig.info/blog/2020/07/03/css-painting-order.html)
