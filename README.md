@@ -99,6 +99,10 @@ Y por último, _headers_ o _footers_ de una página conviene definirlos como **f
 
 Si querés crear un sticky footer podés leer [este artículo](https://css-tricks.com/couple-takes-sticky-footer/).
 
+### Twitter es servicio
+
+Para entender el z-index gráficamente: https://twitter.com/_UmairHafeez_/status/1435116506162081796
+
 ### Material adicional
 
 Les dejamos material adicional para profundizar:
