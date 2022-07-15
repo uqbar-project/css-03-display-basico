@@ -5,21 +5,31 @@
 
 En este breve ejemplo vamos a aprender conceptos básicos de posicionamiento y a jugar un poco con ellos.
 
-Veamos el `ejemplo.html` en un navegador:
-
-![display block e inline](./images/displayBlockEInline.gif)
-
 ### Elementos de bloque
 
 Si repasamos la definición de nuestro HTML
 
 ```html
-  <p>Este es un bloque <em>que tiene cosas para resaltar</em> y otras donde no pasa nada.</p>
-  <p>Separado de otro bloque</p>
-  <div>Separado de un último bloque</div>
+  <p>
+    Bienvenides a un <em>nuevo</em> video de <strong>Diseño para todys</strong>
+  </p>
+
+  <p>
+    <a href="">Mi página web</a> es divertida
+  </p>
+
+  <div>
+    En esta oportunidad vamos a ver cómo funciona mucho contenido mucho contenido mucho contenido
+  </div>
+
+  <section>
+    la configuración display block y display inline.
+  </section>
 ```
 
 vemos que los tres elementos principales son un `<p>` (paragraph) y un `div` (contenedor) y ambos tienen la configuración `display` con el valor `block`, definida por defecto por el navegador o _user agent_.
+
+![display block](./images/display-block.png)
 
 Un **elemento de bloque** forma justamente un bloque que toma el ancho de su contenedor. Los navegadores insertan un salto de línea entre los elementos anterior y siguiente.
 
@@ -29,34 +39,19 @@ Los navegadores definen [los siguientes tags HTML](https://developer.mozilla.org
 
 ### Elementos de línea
 
-Por otra parte, vemos que el tag `<em>` (emphasize, que anteriormente era `<i>`) no define un bloque sino que se ubica en la misma línea que el contenido que está antes y después. La configuración `display: inline` hace que los elementos se ubiquen en forma contigua, respetando la separación adicional que definan padding, border o margin.
-
-Si modificamos la primera línea para agregar elementos `<span>`:
+Por otra parte, vemos que el tag `<a>` (anchor, el link) no define un bloque sino que se ubica en la misma línea que el contenido que está antes y después. La configuración `display: inline` hace que los elementos se ubiquen en forma contigua, respetando la separación adicional que definan padding, border o margin.
 
 ```html
-  <p>
-    <span>Este es un bloque </span>
-    <em>que tiene cosas para resaltar</em>
-    <span> y otras donde no pasa nada.</span>
-  </p>
+<a href="">Mi página web</a> es divertida
 ```
 
-vemos que no tiene efecto visual: los `<span>`, al igual que el tag `<b>` (bold) y el `<em>` que ya vimos, conforman una sola línea.
+![display inline](./images/display-inline.png)
 
 ### Inline-block
 
-Cambiar el ancho de un elemento con display inline no produce ningún efecto:
+Si queremos tener los primeros dos contenedores en la misma línea, podríamos pensar en tener la propiedad `display: inline` pero eso haría que queden pegados. La propiedad `width` no produce ningún efecto, porque el tamaño del contenedor es el que le corresponde en base al contenido. Pero existe la opción `inline-block` que hace que los elementos se ubiquen uno al lado del otro con un tamaño customizable:
 
-```css
-em {
-  ...
-  width: 500px;
-}
-```
-
-No hace que tome 500 píxeles de ancho. Para que continúe siendo inline pero tome el width que necesitamos, existe una tercera configuración llamada `display: inline-block`.
-
-![display inline-block](./images/displayInlineBlock.gif)
+![display inline-block](./images/inlineBlock.gif)
 
 ### None
 
