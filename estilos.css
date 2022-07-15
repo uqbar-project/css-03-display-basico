@@ -1,16 +1,14 @@
+* {
+  font-family: 'Albert Sans', sans-serif;
+}
+
 div {
   border: 1px solid;
-  border-color: darkred;
+  background-color: coral;
   /* 1- display: inline; */
 }
 
 p {
-  /* 1- display: inline; */
-}
-
-em {
-  border: 5px solid;
-  border-color: darkblue;
-  padding: 5px;
-  margin: 10px;
+  display: inline-block;
+  width: 400px;
 }
