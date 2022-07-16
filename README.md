@@ -1,6 +1,8 @@
 
 # Ejemplo display
 
+Para entender más en profundidad este ejemplo recomendamos [ver este video](https://youtu.be/zB3_VCV0t6E).
+
 ## Configuración del atributo display
 
 En este breve ejemplo vamos a aprender conceptos básicos de posicionamiento y a jugar un poco con ellos.
@@ -66,33 +68,33 @@ Si queremos que un elemento no se visualice, lo configuramos con `display: none`
 
 Por lo general trataremos de que nuestros elementos se dispongan en un layout semi-automático, de manera que un agregado o un cambio en algún elemento no desacomode toda la página, entonces nos alcanzará con modificar la propiedad display (en estas variantes básicas o bien `flex` / `grid` que aprenderemos más adelante). Para algunos otros casos vamos a necesitar configuraciones extras como las que veremos a continuación.
 
-### Position absolute + Z-Index
-
-Podemos jugar un poco con el posicionamiento de elementos de bloque, con las configuraciones `position` y `z-index`:
-
-![position absolute y z-index](./images/positionAbsoluteAndZIndex.gif)
-
-Al configurar `position: absolute` los dos `<p>` ambos toman una posición exacta en el navegador definidos por los atributos `left` (eje x) y `top` (eje y). ¿Y qué ocurre si colisionan dos bloques? Para eso tenemos la propiedad `z-index`, que define un eje z donde el elemento que tenga un z-index mayor se posicionará por delante del otro.
-
 ### Static
 
-Por defecto la posición es **static**, esto significa que un elemento se ubicará en la siguiente línea si tiene el atributo display block, o inmediatamente a la derecha si tiene el atributo display inline (más adelante veremos otras formas de configurar el display). Si queremos modificar las propiedades left, right, top, bottom o z-index, no tiene efecto:
+Por defecto la posición es **static**, esto significa que un elemento se ubicará en la siguiente línea si tiene el atributo display block, o inmediatamente a la derecha si tiene el atributo display inline (más adelante veremos otras formas de configurar el display). Si queremos modificar las propiedades left, right, top, bottom o z-index, no tiene efecto.
 
-![cambios a un position static](./images/cambiosAUnPositionStatic.gif)
-
-### Relative
-
-Si cambiamos la posición a **relative**, ahora sí comienzan a funcionar las propiedades left, right, top, bottom o z-index:
-
-![position relative](./images/positionRelative.gif)
+![cambios a un div con position static](./images/cambiosADivPositionStatic.gif)
 
 ### Fixed
 
-Y por último, _headers_ o _footers_ de una página conviene definirlos como **fixed**, como vemos en este video (la propiedad bottom lo posiciona al fondo):
+Parad definir _headers_ o _footers_ de una página utilizamos la configuración **fixed**, como vemos en este video (la propiedad bottom lo posiciona al fondo):
 
-![footer](./images/footer.gif)
+![definir footer](./images/definirFooter.gif)
 
 Si querés crear un sticky footer podés leer [este artículo](https://css-tricks.com/couple-takes-sticky-footer/).
+
+### Relative
+
+Si cambiamos la posición a **relative**, el elemento toma como referencia el lugar que le corresponde dentro de la página. Si modificamos las propiedades top, left, bottom o right, se desplaza desde la posición que ocupa actualmente (si hacemos modificaciones en la página, se posiciona en la nueva ubicación donde debe aparecer). También podemos trabajar con la propiedad z-index para definir qué elemento se ubica encima de otro.
+
+![position relative](./images/divPositionRelative.gif)
+
+### Position absolute + Z-Index
+
+Si definimos un div nuevo con `position: absolute` y lo ubicamos como hermano de los 3 divs anteriores, se posiciona en un punto absoluto dentro de la página. Si por el contrario su contenedor es un elemento definido con `position: relative`, se utilizará como referencia para las propiedades top, left, bottom y right:
+
+![position absolute](./images/divPositionAbsolute.gif)
+
+En caso de colisiones entre elementos, nuevamente podemos trabajarlo con la propiedad z-index.
 
 ### Twitter es servicio
 
