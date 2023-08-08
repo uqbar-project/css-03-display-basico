@@ -8,9 +8,10 @@ body {
 
 div {
   padding: 5px;
+  margin: 5px;
 
   /* Tamaño */
-  width: 100%;
+  width: 100px;
   height: 100px;
 }
 
@@ -20,28 +21,8 @@ div {
 
 .main {
   background-color: steelblue;
-
-  /* Tamaño */
-  height: 200px;
-
-  /* Posicionamiento */
-  position: relative;
-  top: 100px;
-  z-index: 2;
-}
-
-.interior {
-  background-color: darkred;
-  color: white;
-  /* Posicionamiento */
-  position: absolute;
-  top: 50px;
 }
 
 .footer {
   background-color: greenyellow;
-  /* Posicionamiento */
-  position: fixed;
-  bottom: 0;
-  left: 0;
 }
