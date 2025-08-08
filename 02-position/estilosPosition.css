@@ -26,8 +26,13 @@ div {
 
   /* Posicionamiento */
   position: relative;
-  top: 100px;
-  z-index: 2;
+  z-index: 1;
+}
+
+.superior {
+  padding: 20px;
+  background-color: blanchedalmond;
+  position: relative;
 }
 
 .interior {

@@ -1,0 +1,31 @@
+* {
+  font-family: 'Albert Sans', sans-serif;
+}
+
+div {
+  border: 1px solid;
+  background-color: lightskyblue;
+  /* 
+  paso 1
+
+  display: inline
+  */
+
+  /* 
+  paso 2
+  con inline-block o block se vee el width o el height, no pasa eso con inline
+  width: 500px;
+  height: 300px;
+  */
+}
+
+/*
+paso 3
+p {
+  background-color: beige;
+  border: 1px solid red;
+  display: inline-block;
+  width: 700px;
+  height: 200px;
+}
+*/
